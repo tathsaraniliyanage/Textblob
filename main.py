@@ -13,3 +13,5 @@ WordList(['cats', 'dogs', 'octopodes'])
 print(animals)
 print(animals.words)
 print(animals.words.pluralize())
+
+
