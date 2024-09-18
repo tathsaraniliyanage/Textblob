@@ -22,7 +22,12 @@ def feedback():
 
 
 
+@app.route("/rest", methods =['POST'])
+def restEndPoint():
+    data=request.get_json()
+    print(data.get('text'))
 
+    return jsonify({"value":data.get('text')})
 
 
 
