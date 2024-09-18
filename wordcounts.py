@@ -8,6 +8,5 @@ print(monty.word_counts['ekki'])
 print(monty.words.count('ekki', case_sensitive=True))
 
 
-
 wiki = TextBlob("Python is a high-level, general-purpose programming language.")
 print(wiki.noun_phrases.count('python'))
