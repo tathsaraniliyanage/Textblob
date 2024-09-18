@@ -1,13 +1,21 @@
 from textblob import TextBlob, WordList
 import nltk
 
-testimonial = TextBlob("Textblob is amazingly simple to use. What great fun!")
-testimonial.sentiment
-Sentiment(polarity=0.39166666666666666, subjectivity=0.4357142857142857)
-testimonial.sentiment.polarity
+# testimonial = TextBlob("Textblob is amazingly simple to use. What great fun!")
+# testimonial.sentiment
+# testimonial.sentiment.polarity
 
 
-text="good"
+text="bad is better than good"
 blob=TextBlob(text)
-sentiment=blob.sentimentprint(sentiment.polarity)
+sentiment=blob.sentiment
+print(sentiment.polarity)
 
+text="good is better than bad"
+blob=TextBlob(text)
+sentiment=blob.sentiment
+print(sentiment.polarity)
+
+# data set ek tag Kr 
+# error clean kr
+# algorithm ekkin check kra
